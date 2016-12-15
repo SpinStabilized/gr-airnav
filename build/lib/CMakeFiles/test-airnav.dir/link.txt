@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-airnav.dir/test_airnav.cc.o CMakeFiles/test-airnav.dir/qa_airnav.cc.o  -o test-airnav -rdynamic -lgnuradio-runtime -lgnuradio-pmt -lboost_filesystem -lboost_system -lcppunit -ldl libgnuradio-airnav.so -lgnuradio-runtime -lgnuradio-pmt -lboost_filesystem -lboost_system -Wl,-rpath,/home/brian/gr-airnav/build/lib 
