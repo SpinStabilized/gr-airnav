@@ -1,3 +1,4 @@
-test_airnav 16 0.000375494
-qa_unitcircle_ff 3 0.063315
+test_airnav 5 0.000693178
+qa_unitcircle_ff 0 0
 ---
+qa_unitcircle_ff

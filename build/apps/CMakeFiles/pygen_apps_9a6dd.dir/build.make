@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brian/gr-airnav
+CMAKE_SOURCE_DIR = /home/brian/gnur-projects/gr-airnav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brian/gr-airnav/build
+CMAKE_BINARY_DIR = /home/brian/gnur-projects/gr-airnav/build
 
 # Utility rule file for pygen_apps_9a6dd.
 
@@ -63,10 +63,10 @@ apps/CMakeFiles/pygen_apps_9a6dd.dir/build: pygen_apps_9a6dd
 .PHONY : apps/CMakeFiles/pygen_apps_9a6dd.dir/build
 
 apps/CMakeFiles/pygen_apps_9a6dd.dir/clean:
-	cd /home/brian/gr-airnav/build/apps && $(CMAKE_COMMAND) -P CMakeFiles/pygen_apps_9a6dd.dir/cmake_clean.cmake
+	cd /home/brian/gnur-projects/gr-airnav/build/apps && $(CMAKE_COMMAND) -P CMakeFiles/pygen_apps_9a6dd.dir/cmake_clean.cmake
 .PHONY : apps/CMakeFiles/pygen_apps_9a6dd.dir/clean
 
 apps/CMakeFiles/pygen_apps_9a6dd.dir/depend:
-	cd /home/brian/gr-airnav/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brian/gr-airnav /home/brian/gr-airnav/apps /home/brian/gr-airnav/build /home/brian/gr-airnav/build/apps /home/brian/gr-airnav/build/apps/CMakeFiles/pygen_apps_9a6dd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/brian/gnur-projects/gr-airnav/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brian/gnur-projects/gr-airnav /home/brian/gnur-projects/gr-airnav/apps /home/brian/gnur-projects/gr-airnav/build /home/brian/gnur-projects/gr-airnav/build/apps /home/brian/gnur-projects/gr-airnav/build/apps/CMakeFiles/pygen_apps_9a6dd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/CMakeFiles/pygen_apps_9a6dd.dir/depend
 

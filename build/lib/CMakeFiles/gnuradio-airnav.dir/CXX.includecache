@@ -18,17 +18,17 @@ gnuradio/sync_block.h
 math.h
 -
 
-/home/brian/gr-airnav/lib/unitcircle_ff_impl.cc
+/home/brian/gnur-projects/gr-airnav/lib/unitcircle_ff_impl.cc
 config.h
-/home/brian/gr-airnav/lib/config.h
+/home/brian/gnur-projects/gr-airnav/lib/config.h
 gnuradio/io_signature.h
 -
 unitcircle_ff_impl.h
-/home/brian/gr-airnav/lib/unitcircle_ff_impl.h
+/home/brian/gnur-projects/gr-airnav/lib/unitcircle_ff_impl.h
 math.h
 -
 
-/home/brian/gr-airnav/lib/unitcircle_ff_impl.h
+/home/brian/gnur-projects/gr-airnav/lib/unitcircle_ff_impl.h
 airnav/unitcircle_ff.h
 -
 

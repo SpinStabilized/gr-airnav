@@ -1,4 +1,4 @@
-# Install script for directory: /home/brian/gr-airnav/include/airnav
+# Install script for directory: /home/brian/gnur-projects/gr-airnav/include/airnav
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/airnav" TYPE FILE FILES
-    "/home/brian/gr-airnav/include/airnav/api.h"
-    "/home/brian/gr-airnav/include/airnav/unitcircle_ff.h"
+    "/home/brian/gnur-projects/gr-airnav/include/airnav/api.h"
+    "/home/brian/gnur-projects/gr-airnav/include/airnav/unitcircle_ff.h"
     )
 endif()
 

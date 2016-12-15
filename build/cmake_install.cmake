@@ -1,4 +1,4 @@
-# Install script for directory: /home/brian/gr-airnav
+# Install script for directory: /home/brian/gnur-projects/gr-airnav
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,18 +33,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/airnav" TYPE FILE FILES "/home/brian/gr-airnav/cmake/Modules/airnavConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/airnav" TYPE FILE FILES "/home/brian/gnur-projects/gr-airnav/cmake/Modules/airnavConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/brian/gr-airnav/build/include/airnav/cmake_install.cmake")
-  include("/home/brian/gr-airnav/build/lib/cmake_install.cmake")
-  include("/home/brian/gr-airnav/build/swig/cmake_install.cmake")
-  include("/home/brian/gr-airnav/build/python/cmake_install.cmake")
-  include("/home/brian/gr-airnav/build/grc/cmake_install.cmake")
-  include("/home/brian/gr-airnav/build/apps/cmake_install.cmake")
-  include("/home/brian/gr-airnav/build/docs/cmake_install.cmake")
+  include("/home/brian/gnur-projects/gr-airnav/build/include/airnav/cmake_install.cmake")
+  include("/home/brian/gnur-projects/gr-airnav/build/lib/cmake_install.cmake")
+  include("/home/brian/gnur-projects/gr-airnav/build/swig/cmake_install.cmake")
+  include("/home/brian/gnur-projects/gr-airnav/build/python/cmake_install.cmake")
+  include("/home/brian/gnur-projects/gr-airnav/build/grc/cmake_install.cmake")
+  include("/home/brian/gnur-projects/gr-airnav/build/apps/cmake_install.cmake")
+  include("/home/brian/gnur-projects/gr-airnav/build/docs/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/brian/gr-airnav/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/brian/gnur-projects/gr-airnav/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

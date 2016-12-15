@@ -48,13 +48,23 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brian/gr-airnav
+CMAKE_SOURCE_DIR = /home/brian/gnur-projects/gr-airnav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brian/gr-airnav/build
+CMAKE_BINARY_DIR = /home/brian/gnur-projects/gr-airnav/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target install
 install: preinstall
@@ -68,15 +78,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : list_install_components/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -122,27 +133,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/brian/gr-airnav/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/brian/gr-airnav/build/CMakeFiles /home/brian/gr-airnav/build/swig/CMakeFiles/progress.marks
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/brian/gr-airnav/build/CMakeFiles 0
+	cd /home/brian/gnur-projects/gr-airnav/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/brian/gnur-projects/gr-airnav/build/CMakeFiles /home/brian/gnur-projects/gr-airnav/build/swig/CMakeFiles/progress.marks
+	cd /home/brian/gnur-projects/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brian/gnur-projects/gr-airnav/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/clean
+	cd /home/brian/gnur-projects/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,174 +152,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/preinstall
+	cd /home/brian/gnur-projects/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/preinstall
+	cd /home/brian/gnur-projects/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/brian/gr-airnav/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/brian/gnur-projects/gr-airnav/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-swig/CMakeFiles/_airnav_swig.dir/rule:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_airnav_swig.dir/rule
-.PHONY : swig/CMakeFiles/_airnav_swig.dir/rule
-
-# Convenience name for target.
-_airnav_swig: swig/CMakeFiles/_airnav_swig.dir/rule
-
-.PHONY : _airnav_swig
-
-# fast build rule for target.
-_airnav_swig/fast:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/_airnav_swig.dir/build.make swig/CMakeFiles/_airnav_swig.dir/build
-.PHONY : _airnav_swig/fast
-
-# Convenience name for target.
-swig/CMakeFiles/airnav_swig_swig_2d0df.dir/rule:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/airnav_swig_swig_2d0df.dir/rule
-.PHONY : swig/CMakeFiles/airnav_swig_swig_2d0df.dir/rule
-
-# Convenience name for target.
-airnav_swig_swig_2d0df: swig/CMakeFiles/airnav_swig_swig_2d0df.dir/rule
-
-.PHONY : airnav_swig_swig_2d0df
-
-# fast build rule for target.
-airnav_swig_swig_2d0df/fast:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/airnav_swig_swig_2d0df.dir/build.make swig/CMakeFiles/airnav_swig_swig_2d0df.dir/build
-.PHONY : airnav_swig_swig_2d0df/fast
-
-# Convenience name for target.
-swig/CMakeFiles/pygen_swig_9dc8d.dir/rule:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/pygen_swig_9dc8d.dir/rule
-.PHONY : swig/CMakeFiles/pygen_swig_9dc8d.dir/rule
-
-# Convenience name for target.
-pygen_swig_9dc8d: swig/CMakeFiles/pygen_swig_9dc8d.dir/rule
-
-.PHONY : pygen_swig_9dc8d
-
-# fast build rule for target.
-pygen_swig_9dc8d/fast:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/pygen_swig_9dc8d.dir/build.make swig/CMakeFiles/pygen_swig_9dc8d.dir/build
-.PHONY : pygen_swig_9dc8d/fast
-
-# Convenience name for target.
-swig/CMakeFiles/airnav_swig_swig_doc.dir/rule:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/airnav_swig_swig_doc.dir/rule
-.PHONY : swig/CMakeFiles/airnav_swig_swig_doc.dir/rule
-
-# Convenience name for target.
-airnav_swig_swig_doc: swig/CMakeFiles/airnav_swig_swig_doc.dir/rule
-
-.PHONY : airnav_swig_swig_doc
-
-# fast build rule for target.
-airnav_swig_swig_doc/fast:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/airnav_swig_swig_doc.dir/build.make swig/CMakeFiles/airnav_swig_swig_doc.dir/build
-.PHONY : airnav_swig_swig_doc/fast
-
-# Convenience name for target.
-swig/CMakeFiles/_airnav_swig_swig_tag.dir/rule:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_airnav_swig_swig_tag.dir/rule
-.PHONY : swig/CMakeFiles/_airnav_swig_swig_tag.dir/rule
-
-# Convenience name for target.
-_airnav_swig_swig_tag: swig/CMakeFiles/_airnav_swig_swig_tag.dir/rule
-
-.PHONY : _airnav_swig_swig_tag
-
-# fast build rule for target.
-_airnav_swig_swig_tag/fast:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/_airnav_swig_swig_tag.dir/build.make swig/CMakeFiles/_airnav_swig_swig_tag.dir/build
-.PHONY : _airnav_swig_swig_tag/fast
-
-_airnav_swig_swig_tag.o: _airnav_swig_swig_tag.cpp.o
-
-.PHONY : _airnav_swig_swig_tag.o
-
-# target to build an object file
-_airnav_swig_swig_tag.cpp.o:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/_airnav_swig_swig_tag.dir/build.make swig/CMakeFiles/_airnav_swig_swig_tag.dir/_airnav_swig_swig_tag.cpp.o
-.PHONY : _airnav_swig_swig_tag.cpp.o
-
-_airnav_swig_swig_tag.i: _airnav_swig_swig_tag.cpp.i
-
-.PHONY : _airnav_swig_swig_tag.i
-
-# target to preprocess a source file
-_airnav_swig_swig_tag.cpp.i:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/_airnav_swig_swig_tag.dir/build.make swig/CMakeFiles/_airnav_swig_swig_tag.dir/_airnav_swig_swig_tag.cpp.i
-.PHONY : _airnav_swig_swig_tag.cpp.i
-
-_airnav_swig_swig_tag.s: _airnav_swig_swig_tag.cpp.s
-
-.PHONY : _airnav_swig_swig_tag.s
-
-# target to generate assembly for a file
-_airnav_swig_swig_tag.cpp.s:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/_airnav_swig_swig_tag.dir/build.make swig/CMakeFiles/_airnav_swig_swig_tag.dir/_airnav_swig_swig_tag.cpp.s
-.PHONY : _airnav_swig_swig_tag.cpp.s
-
-airnav_swigPYTHON_wrap.o: airnav_swigPYTHON_wrap.cxx.o
-
-.PHONY : airnav_swigPYTHON_wrap.o
-
-# target to build an object file
-airnav_swigPYTHON_wrap.cxx.o:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/_airnav_swig.dir/build.make swig/CMakeFiles/_airnav_swig.dir/airnav_swigPYTHON_wrap.cxx.o
-.PHONY : airnav_swigPYTHON_wrap.cxx.o
-
-airnav_swigPYTHON_wrap.i: airnav_swigPYTHON_wrap.cxx.i
-
-.PHONY : airnav_swigPYTHON_wrap.i
-
-# target to preprocess a source file
-airnav_swigPYTHON_wrap.cxx.i:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/_airnav_swig.dir/build.make swig/CMakeFiles/_airnav_swig.dir/airnav_swigPYTHON_wrap.cxx.i
-.PHONY : airnav_swigPYTHON_wrap.cxx.i
-
-airnav_swigPYTHON_wrap.s: airnav_swigPYTHON_wrap.cxx.s
-
-.PHONY : airnav_swigPYTHON_wrap.s
-
-# target to generate assembly for a file
-airnav_swigPYTHON_wrap.cxx.s:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/_airnav_swig.dir/build.make swig/CMakeFiles/_airnav_swig.dir/airnav_swigPYTHON_wrap.cxx.s
-.PHONY : airnav_swigPYTHON_wrap.cxx.s
-
-airnav_swig_swig_2d0df.o: airnav_swig_swig_2d0df.cpp.o
-
-.PHONY : airnav_swig_swig_2d0df.o
-
-# target to build an object file
-airnav_swig_swig_2d0df.cpp.o:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/airnav_swig_swig_2d0df.dir/build.make swig/CMakeFiles/airnav_swig_swig_2d0df.dir/airnav_swig_swig_2d0df.cpp.o
-.PHONY : airnav_swig_swig_2d0df.cpp.o
-
-airnav_swig_swig_2d0df.i: airnav_swig_swig_2d0df.cpp.i
-
-.PHONY : airnav_swig_swig_2d0df.i
-
-# target to preprocess a source file
-airnav_swig_swig_2d0df.cpp.i:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/airnav_swig_swig_2d0df.dir/build.make swig/CMakeFiles/airnav_swig_swig_2d0df.dir/airnav_swig_swig_2d0df.cpp.i
-.PHONY : airnav_swig_swig_2d0df.cpp.i
-
-airnav_swig_swig_2d0df.s: airnav_swig_swig_2d0df.cpp.s
-
-.PHONY : airnav_swig_swig_2d0df.s
-
-# target to generate assembly for a file
-airnav_swig_swig_2d0df.cpp.s:
-	cd /home/brian/gr-airnav/build && $(MAKE) -f swig/CMakeFiles/airnav_swig_swig_2d0df.dir/build.make swig/CMakeFiles/airnav_swig_swig_2d0df.dir/airnav_swig_swig_2d0df.cpp.s
-.PHONY : airnav_swig_swig_2d0df.cpp.s
 
 # Help Target
 help:
@@ -327,27 +171,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... _airnav_swig"
-	@echo "... airnav_swig_swig_2d0df"
 	@echo "... list_install_components"
+	@echo "... install"
+	@echo "... rebuild_cache"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... pygen_swig_9dc8d"
 	@echo "... test"
-	@echo "... airnav_swig_swig_doc"
 	@echo "... edit_cache"
-	@echo "... _airnav_swig_swig_tag"
-	@echo "... rebuild_cache"
-	@echo "... _airnav_swig_swig_tag.o"
-	@echo "... _airnav_swig_swig_tag.i"
-	@echo "... _airnav_swig_swig_tag.s"
-	@echo "... airnav_swigPYTHON_wrap.o"
-	@echo "... airnav_swigPYTHON_wrap.i"
-	@echo "... airnav_swigPYTHON_wrap.s"
-	@echo "... airnav_swig_swig_2d0df.o"
-	@echo "... airnav_swig_swig_2d0df.i"
-	@echo "... airnav_swig_swig_2d0df.s"
 .PHONY : help
 
 
@@ -359,6 +189,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/brian/gr-airnav/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/brian/gnur-projects/gr-airnav/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,40 +1,39 @@
-Start testing: Nov 22 10:24 EST
+Start testing: Dec 15 17:35 EST
 ----------------------------------------------------------
 1/2 Testing: test_airnav
 1/2 Test: test_airnav
-Command: "/bin/sh" "/home/brian/gr-airnav/build/lib/test_airnav_test.sh"
-Directory: /home/brian/gr-airnav/build/lib
-"test_airnav" start time: Nov 22 10:24 EST
+Command: "/bin/sh" "/home/brian/gnur-projects/gr-airnav/build/lib/test_airnav_test.sh"
+Directory: /home/brian/gnur-projects/gr-airnav/build/lib
+"test_airnav" start time: Dec 15 17:35 EST
 Output:
 ----------------------------------------------------------
 
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_airnav" end time: Nov 22 10:24 EST
+"test_airnav" end time: Dec 15 17:35 EST
 "test_airnav" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 2/2 Testing: qa_unitcircle_ff
 2/2 Test: qa_unitcircle_ff
-Command: "/bin/sh" "/home/brian/gr-airnav/build/python/qa_unitcircle_ff_test.sh"
-Directory: /home/brian/gr-airnav/build/python
-"qa_unitcircle_ff" start time: Nov 22 10:24 EST
+Command: "/bin/sh" "/home/brian/gnur-projects/gr-airnav/build/python/qa_unitcircle_ff_test.sh"
+Directory: /home/brian/gnur-projects/gr-airnav/build/python
+"qa_unitcircle_ff" start time: Dec 15 17:35 EST
 Output:
 ----------------------------------------------------------
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.002s
-
-OK
+Traceback (most recent call last):
+  File "/home/brian/gnur-projects/gr-airnav/python/qa_unitcircle_ff.py", line 24, in <module>
+    import airnav_swig as airnav
+ImportError: No module named airnav_swig
 <end of output>
-Test time =   0.19 sec
+Test time =   0.18 sec
 ----------------------------------------------------------
-Test Passed.
-"qa_unitcircle_ff" end time: Nov 22 10:24 EST
+Test Failed.
+"qa_unitcircle_ff" end time: Dec 15 17:35 EST
 "qa_unitcircle_ff" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 22 10:24 EST
+End testing: Dec 15 17:35 EST

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/brian/gr-airnav/lib/qa_airnav.cc" "/home/brian/gr-airnav/build/lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.o"
-  "/home/brian/gr-airnav/lib/test_airnav.cc" "/home/brian/gr-airnav/build/lib/CMakeFiles/test-airnav.dir/test_airnav.cc.o"
+  "/home/brian/gnur-projects/gr-airnav/lib/qa_airnav.cc" "/home/brian/gnur-projects/gr-airnav/build/lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.o"
+  "/home/brian/gnur-projects/gr-airnav/lib/test_airnav.cc" "/home/brian/gnur-projects/gr-airnav/build/lib/CMakeFiles/test-airnav.dir/test_airnav.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,7 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/brian/gr-airnav/build/lib/CMakeFiles/gnuradio-airnav.dir/DependInfo.cmake"
+  "/home/brian/gnur-projects/gr-airnav/build/lib/CMakeFiles/gnuradio-airnav.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

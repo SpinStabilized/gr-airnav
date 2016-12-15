@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brian/gr-airnav
+CMAKE_SOURCE_DIR = /home/brian/gnur-projects/gr-airnav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brian/gr-airnav/build
+CMAKE_BINARY_DIR = /home/brian/gnur-projects/gr-airnav/build
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/brian/gr-airnav/build
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/brian/gr-airnav/build/cmake_uninstall.cmake
+	/usr/bin/cmake -P /home/brian/gnur-projects/gr-airnav/build/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/brian/gr-airnav/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brian/gr-airnav /home/brian/gr-airnav /home/brian/gr-airnav/build /home/brian/gr-airnav/build /home/brian/gr-airnav/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/brian/gnur-projects/gr-airnav/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brian/gnur-projects/gr-airnav /home/brian/gnur-projects/gr-airnav /home/brian/gnur-projects/gr-airnav/build /home/brian/gnur-projects/gr-airnav/build /home/brian/gnur-projects/gr-airnav/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

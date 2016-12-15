@@ -4,5 +4,5 @@
 lib/CMakeFiles/gnuradio-airnav.dir/unitcircle_ff_impl.cc.o
  ../include/airnav/api.h
  ../include/airnav/unitcircle_ff.h
- /home/brian/gr-airnav/lib/unitcircle_ff_impl.cc
- /home/brian/gr-airnav/lib/unitcircle_ff_impl.h
+ /home/brian/gnur-projects/gr-airnav/lib/unitcircle_ff_impl.cc
+ /home/brian/gnur-projects/gr-airnav/lib/unitcircle_ff_impl.h

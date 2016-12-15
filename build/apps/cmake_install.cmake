@@ -1,4 +1,4 @@
-# Install script for directory: /home/brian/gr-airnav/apps
+# Install script for directory: /home/brian/gnur-projects/gr-airnav/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

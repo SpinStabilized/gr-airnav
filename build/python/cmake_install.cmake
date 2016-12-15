@@ -1,4 +1,4 @@
-# Install script for directory: /home/brian/gr-airnav/python
+# Install script for directory: /home/brian/gnur-projects/gr-airnav/python
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,20 +34,20 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/airnav" TYPE FILE FILES
-    "/home/brian/gr-airnav/python/__init__.py"
-    "/home/brian/gr-airnav/python/morse_decode.py"
-    "/home/brian/gr-airnav/python/qt_ident.py"
+    "/home/brian/gnur-projects/gr-airnav/python/__init__.py"
+    "/home/brian/gnur-projects/gr-airnav/python/morse_decode.py"
+    "/home/brian/gnur-projects/gr-airnav/python/qt_ident.py"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/airnav" TYPE FILE FILES
-    "/home/brian/gr-airnav/build/python/__init__.pyc"
-    "/home/brian/gr-airnav/build/python/morse_decode.pyc"
-    "/home/brian/gr-airnav/build/python/qt_ident.pyc"
-    "/home/brian/gr-airnav/build/python/__init__.pyo"
-    "/home/brian/gr-airnav/build/python/morse_decode.pyo"
-    "/home/brian/gr-airnav/build/python/qt_ident.pyo"
+    "/home/brian/gnur-projects/gr-airnav/build/python/__init__.pyc"
+    "/home/brian/gnur-projects/gr-airnav/build/python/morse_decode.pyc"
+    "/home/brian/gnur-projects/gr-airnav/build/python/qt_ident.pyc"
+    "/home/brian/gnur-projects/gr-airnav/build/python/__init__.pyo"
+    "/home/brian/gnur-projects/gr-airnav/build/python/morse_decode.pyo"
+    "/home/brian/gnur-projects/gr-airnav/build/python/qt_ident.pyo"
     )
 endif()
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/brian/gr-airnav/lib/unitcircle_ff_impl.cc" "/home/brian/gr-airnav/build/lib/CMakeFiles/gnuradio-airnav.dir/unitcircle_ff_impl.cc.o"
+  "/home/brian/gnur-projects/gr-airnav/lib/unitcircle_ff_impl.cc" "/home/brian/gnur-projects/gr-airnav/build/lib/CMakeFiles/gnuradio-airnav.dir/unitcircle_ff_impl.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brian/gr-airnav
+CMAKE_SOURCE_DIR = /home/brian/gnur-projects/gr-airnav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brian/gr-airnav/build
+CMAKE_BINARY_DIR = /home/brian/gnur-projects/gr-airnav/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,9 +135,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/brian/gr-airnav/build/CMakeFiles /home/brian/gr-airnav/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brian/gnur-projects/gr-airnav/build/CMakeFiles /home/brian/gnur-projects/gr-airnav/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/brian/gr-airnav/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brian/gnur-projects/gr-airnav/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -205,82 +205,17 @@ test-airnav/fast:
 .PHONY : test-airnav/fast
 
 #=============================================================================
-# Target rules for targets named _airnav_swig
+# Target rules for targets named pygen_python_f755f
 
 # Build rule for target.
-_airnav_swig: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _airnav_swig
-.PHONY : _airnav_swig
+pygen_python_f755f: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_python_f755f
+.PHONY : pygen_python_f755f
 
 # fast build rule for target.
-_airnav_swig/fast:
-	$(MAKE) -f swig/CMakeFiles/_airnav_swig.dir/build.make swig/CMakeFiles/_airnav_swig.dir/build
-.PHONY : _airnav_swig/fast
-
-#=============================================================================
-# Target rules for targets named airnav_swig_swig_2d0df
-
-# Build rule for target.
-airnav_swig_swig_2d0df: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 airnav_swig_swig_2d0df
-.PHONY : airnav_swig_swig_2d0df
-
-# fast build rule for target.
-airnav_swig_swig_2d0df/fast:
-	$(MAKE) -f swig/CMakeFiles/airnav_swig_swig_2d0df.dir/build.make swig/CMakeFiles/airnav_swig_swig_2d0df.dir/build
-.PHONY : airnav_swig_swig_2d0df/fast
-
-#=============================================================================
-# Target rules for targets named pygen_swig_9dc8d
-
-# Build rule for target.
-pygen_swig_9dc8d: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_swig_9dc8d
-.PHONY : pygen_swig_9dc8d
-
-# fast build rule for target.
-pygen_swig_9dc8d/fast:
-	$(MAKE) -f swig/CMakeFiles/pygen_swig_9dc8d.dir/build.make swig/CMakeFiles/pygen_swig_9dc8d.dir/build
-.PHONY : pygen_swig_9dc8d/fast
-
-#=============================================================================
-# Target rules for targets named airnav_swig_swig_doc
-
-# Build rule for target.
-airnav_swig_swig_doc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 airnav_swig_swig_doc
-.PHONY : airnav_swig_swig_doc
-
-# fast build rule for target.
-airnav_swig_swig_doc/fast:
-	$(MAKE) -f swig/CMakeFiles/airnav_swig_swig_doc.dir/build.make swig/CMakeFiles/airnav_swig_swig_doc.dir/build
-.PHONY : airnav_swig_swig_doc/fast
-
-#=============================================================================
-# Target rules for targets named _airnav_swig_swig_tag
-
-# Build rule for target.
-_airnav_swig_swig_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _airnav_swig_swig_tag
-.PHONY : _airnav_swig_swig_tag
-
-# fast build rule for target.
-_airnav_swig_swig_tag/fast:
-	$(MAKE) -f swig/CMakeFiles/_airnav_swig_swig_tag.dir/build.make swig/CMakeFiles/_airnav_swig_swig_tag.dir/build
-.PHONY : _airnav_swig_swig_tag/fast
-
-#=============================================================================
-# Target rules for targets named pygen_python_5e93c
-
-# Build rule for target.
-pygen_python_5e93c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_python_5e93c
-.PHONY : pygen_python_5e93c
-
-# fast build rule for target.
-pygen_python_5e93c/fast:
-	$(MAKE) -f python/CMakeFiles/pygen_python_5e93c.dir/build.make python/CMakeFiles/pygen_python_5e93c.dir/build
-.PHONY : pygen_python_5e93c/fast
+pygen_python_f755f/fast:
+	$(MAKE) -f python/CMakeFiles/pygen_python_f755f.dir/build.make python/CMakeFiles/pygen_python_f755f.dir/build
+.PHONY : pygen_python_f755f/fast
 
 #=============================================================================
 # Target rules for targets named pygen_apps_9a6dd
@@ -311,12 +246,7 @@ help:
 	@echo "... test"
 	@echo "... gnuradio-airnav"
 	@echo "... test-airnav"
-	@echo "... _airnav_swig"
-	@echo "... airnav_swig_swig_2d0df"
-	@echo "... pygen_swig_9dc8d"
-	@echo "... airnav_swig_swig_doc"
-	@echo "... _airnav_swig_swig_tag"
-	@echo "... pygen_python_5e93c"
+	@echo "... pygen_python_f755f"
 	@echo "... pygen_apps_9a6dd"
 .PHONY : help
 

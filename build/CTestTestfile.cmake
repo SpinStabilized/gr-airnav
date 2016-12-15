@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/brian/gr-airnav
-# Build directory: /home/brian/gr-airnav/build
+# Source directory: /home/brian/gnur-projects/gr-airnav
+# Build directory: /home/brian/gnur-projects/gr-airnav/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

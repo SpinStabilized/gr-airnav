@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -fvisibility=hidden
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/brian/gr-airnav/lib -I/home/brian/gr-airnav/include -I/home/brian/gr-airnav/build/lib -I/home/brian/gr-airnav/build/include 
+CXX_INCLUDES = -I/home/brian/gnur-projects/gr-airnav/lib -I/home/brian/gnur-projects/gr-airnav/include -I/home/brian/gnur-projects/gr-airnav/build/lib -I/home/brian/gnur-projects/gr-airnav/build/include 
 

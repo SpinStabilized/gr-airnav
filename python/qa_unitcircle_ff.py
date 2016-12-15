@@ -42,7 +42,7 @@ class qa_unitcircle_ff (gr_unittest.TestCase):
         self.tb.connect(cir, dst)
         self.tb.run()
         result_data = dst.data()
-        self.assertFloatTuplesAlmostEqual(expected_result, result_data, 4)
+        self.assertFloatTuplesAlmostEqual(expected_result, result_data,3)
 
 
 if __name__ == '__main__':

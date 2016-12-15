@@ -1,4 +1,4 @@
-# Install script for directory: /home/brian/gr-airnav/grc
+# Install script for directory: /home/brian/gnur-projects/gr-airnav/grc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/brian/gr-airnav/grc/airnav_unitcircle_ff.xml"
-    "/home/brian/gr-airnav/grc/airnav_morse_decode.xml"
-    "/home/brian/gr-airnav/grc/airnav_qt_ident.xml"
+    "/home/brian/gnur-projects/gr-airnav/grc/airnav_unitcircle_ff.xml"
+    "/home/brian/gnur-projects/gr-airnav/grc/airnav_morse_decode.xml"
+    "/home/brian/gnur-projects/gr-airnav/grc/airnav_qt_ident.xml"
     )
 endif()
 

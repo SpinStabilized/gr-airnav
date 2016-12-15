@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brian/gr-airnav
+CMAKE_SOURCE_DIR = /home/brian/gnur-projects/gr-airnav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brian/gr-airnav/build
+CMAKE_BINARY_DIR = /home/brian/gnur-projects/gr-airnav/build
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/test-airnav.dir/depend.make
@@ -59,16 +59,16 @@ include lib/CMakeFiles/test-airnav.dir/flags.make
 
 lib/CMakeFiles/test-airnav.dir/test_airnav.cc.o: lib/CMakeFiles/test-airnav.dir/flags.make
 lib/CMakeFiles/test-airnav.dir/test_airnav.cc.o: ../lib/test_airnav.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/gr-airnav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/test-airnav.dir/test_airnav.cc.o"
-	cd /home/brian/gr-airnav/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-airnav.dir/test_airnav.cc.o -c /home/brian/gr-airnav/lib/test_airnav.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/gnur-projects/gr-airnav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/test-airnav.dir/test_airnav.cc.o"
+	cd /home/brian/gnur-projects/gr-airnav/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-airnav.dir/test_airnav.cc.o -c /home/brian/gnur-projects/gr-airnav/lib/test_airnav.cc
 
 lib/CMakeFiles/test-airnav.dir/test_airnav.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-airnav.dir/test_airnav.cc.i"
-	cd /home/brian/gr-airnav/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/gr-airnav/lib/test_airnav.cc > CMakeFiles/test-airnav.dir/test_airnav.cc.i
+	cd /home/brian/gnur-projects/gr-airnav/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/gnur-projects/gr-airnav/lib/test_airnav.cc > CMakeFiles/test-airnav.dir/test_airnav.cc.i
 
 lib/CMakeFiles/test-airnav.dir/test_airnav.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-airnav.dir/test_airnav.cc.s"
-	cd /home/brian/gr-airnav/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/gr-airnav/lib/test_airnav.cc -o CMakeFiles/test-airnav.dir/test_airnav.cc.s
+	cd /home/brian/gnur-projects/gr-airnav/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/gnur-projects/gr-airnav/lib/test_airnav.cc -o CMakeFiles/test-airnav.dir/test_airnav.cc.s
 
 lib/CMakeFiles/test-airnav.dir/test_airnav.cc.o.requires:
 
@@ -83,16 +83,16 @@ lib/CMakeFiles/test-airnav.dir/test_airnav.cc.o.provides.build: lib/CMakeFiles/t
 
 lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.o: lib/CMakeFiles/test-airnav.dir/flags.make
 lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.o: ../lib/qa_airnav.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/gr-airnav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.o"
-	cd /home/brian/gr-airnav/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-airnav.dir/qa_airnav.cc.o -c /home/brian/gr-airnav/lib/qa_airnav.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/gnur-projects/gr-airnav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.o"
+	cd /home/brian/gnur-projects/gr-airnav/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-airnav.dir/qa_airnav.cc.o -c /home/brian/gnur-projects/gr-airnav/lib/qa_airnav.cc
 
 lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-airnav.dir/qa_airnav.cc.i"
-	cd /home/brian/gr-airnav/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/gr-airnav/lib/qa_airnav.cc > CMakeFiles/test-airnav.dir/qa_airnav.cc.i
+	cd /home/brian/gnur-projects/gr-airnav/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/gnur-projects/gr-airnav/lib/qa_airnav.cc > CMakeFiles/test-airnav.dir/qa_airnav.cc.i
 
 lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-airnav.dir/qa_airnav.cc.s"
-	cd /home/brian/gr-airnav/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/gr-airnav/lib/qa_airnav.cc -o CMakeFiles/test-airnav.dir/qa_airnav.cc.s
+	cd /home/brian/gnur-projects/gr-airnav/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/gnur-projects/gr-airnav/lib/qa_airnav.cc -o CMakeFiles/test-airnav.dir/qa_airnav.cc.s
 
 lib/CMakeFiles/test-airnav.dir/qa_airnav.cc.o.requires:
 
@@ -127,8 +127,8 @@ lib/test-airnav: /usr/lib/x86_64-linux-gnu/libgnuradio-pmt.so
 lib/test-airnav: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/test-airnav: /usr/lib/x86_64-linux-gnu/libboost_system.so
 lib/test-airnav: lib/CMakeFiles/test-airnav.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/brian/gr-airnav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test-airnav"
-	cd /home/brian/gr-airnav/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-airnav.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/brian/gnur-projects/gr-airnav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test-airnav"
+	cd /home/brian/gnur-projects/gr-airnav/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-airnav.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/CMakeFiles/test-airnav.dir/build: lib/test-airnav
@@ -141,10 +141,10 @@ lib/CMakeFiles/test-airnav.dir/requires: lib/CMakeFiles/test-airnav.dir/qa_airna
 .PHONY : lib/CMakeFiles/test-airnav.dir/requires
 
 lib/CMakeFiles/test-airnav.dir/clean:
-	cd /home/brian/gr-airnav/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/test-airnav.dir/cmake_clean.cmake
+	cd /home/brian/gnur-projects/gr-airnav/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/test-airnav.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/test-airnav.dir/clean
 
 lib/CMakeFiles/test-airnav.dir/depend:
-	cd /home/brian/gr-airnav/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brian/gr-airnav /home/brian/gr-airnav/lib /home/brian/gr-airnav/build /home/brian/gr-airnav/build/lib /home/brian/gr-airnav/build/lib/CMakeFiles/test-airnav.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/brian/gnur-projects/gr-airnav/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brian/gnur-projects/gr-airnav /home/brian/gnur-projects/gr-airnav/lib /home/brian/gnur-projects/gr-airnav/build /home/brian/gnur-projects/gr-airnav/build/lib /home/brian/gnur-projects/gr-airnav/build/lib/CMakeFiles/test-airnav.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMakeFiles/test-airnav.dir/depend
 
