@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libgnuradio-airnav.so -o libgnuradio-airnav.so CMakeFiles/gnuradio-airnav.dir/unitcircle_ff_impl.cc.o -lboost_filesystem -lboost_system -lgnuradio-runtime -lgnuradio-pmt 
